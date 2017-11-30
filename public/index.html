@@ -3,6 +3,7 @@
 <html >
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>To-Do List</title>
 
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
@@ -42,6 +43,10 @@ body, html {
   color: #8B0000;
   text-shadow: 2px 2px 0 #1c2833;
   margin-top: 25px;
+}
+    
+#container {
+  text-align: center;      
 }
 
 #input-field {
@@ -158,6 +163,14 @@ ul li {
              
         }
     }
+    
+    @media (max-width: 400px) {
+        #input-field {
+            width: 100%;
+            margin: 8% 0%;
+            text-align: center;
+        }
+    }
 
     </style>
       
@@ -204,6 +217,7 @@ deleteTask(deletedListItem) {
   
   render() {
         return (
+         <div id="container">
           <div id="input-field">
           <h1 id="heading">To-Do List</h1>
    <div className="task-box">
@@ -222,6 +236,7 @@ deleteTask(deletedListItem) {
         </ul>
             </div>
           </div>
+         </div>
        );
     }
 }
