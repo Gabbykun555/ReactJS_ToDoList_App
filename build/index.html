@@ -37,7 +37,7 @@ deleteTask(deletedListItem) {
           <div id="input-field">
           <h1 id="heading">To-Do List</h1>
    <div className="task-box">
-    <input type="text" id="enter-task" value={this.state.userInput} onChange={ (e) => this.changeUserInput(e.target.value)} placeholder="Add something to do..." />
+    <input type="text" id="enter-task" value={this.state.userInput} onChange={ (e) => this.changeUserInput(e.target.value)} placeholder=" Add something to do..." />
         
     <a href="#" id="add-btn" onClick={()=>this.addToList(this.state.userInput)}>Add</a>
      
